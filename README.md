@@ -7,9 +7,9 @@ https://mega.nz/#F!tlQliCpA!rSVq2t7PpyjxnVfH6CGzOQ
 ## Cosa e' contenuto in questa repository?
 
 Codice Python dell'applicazione. 
-Per eseguire l'applicazione inserire all'interno della cartella \Ristobot la cartella "Installazione" scaricabile all'indirizzo: 
+Per eseguire l'applicazione inserire all'interno della cartella "\Ristobot-master" la cartella "Installazione" scaricabile all'indirizzo: 
 https://mega.nz/#F!x0AQFJjR!fNUCvskCRxHIn15u4mS8qw
-e seguire le indicazioni riportate più avanti
+e seguire le indicazioni riportate piÃ¹ avanti
 ## Requisiti
 - **Python** versione 3.6 
 - **Pip** versione 9.0.1 o superiore
@@ -19,7 +19,7 @@ e seguire le indicazioni riportate più avanti
 ## Installazione
 #####Download cartella installazione
 - Scaricare la cartella "Install" al seguente link: https://mega.nz/#F!x0AQFJjR!fNUCvskCRxHIn15u4mS8qw
-- Posizionare la cartella scaricata all'interno della cartella \RistoBot
+- Posizionare la cartella scaricata all'interno della cartella "\Ristobot-master"
 ##### 1 - Setting MongoDB
 - Aprire il file di testo "config" presente nella cartella "*.\Install\StartApplication*"
 - Sostituire il path presente nel file con quello relativo alla cartella di installazione di mongoDB
