@@ -7,7 +7,7 @@ https://mega.nz/#F!tlQliCpA!rSVq2t7PpyjxnVfH6CGzOQ
 ## Cosa e' contenuto in questa repository?
 
 Codice Python dell'applicazione. 
-Per eseguire l'applicazione inserire all'interno della cartella "\Ristobot-master" la cartella "Installazione" scaricabile all'indirizzo: 
+Per eseguire l'applicazione inserire all'interno della cartella "\Ristobot-master" la cartella "Install" scaricabile all'indirizzo: 
 https://mega.nz/#F!x0AQFJjR!fNUCvskCRxHIn15u4mS8qw
 e seguire le indicazioni riportate più avanti
 ## Requisiti
