@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="98b7038e-2d9c-4c10-9ced-8654b65016d5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Config/config.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webhook/templates/testRecommendation6.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/category/categories.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/category/restoreDB.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/facebookCategories.bson" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/facebookCategories.metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/persons.bson" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/persons.metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/photoLinks.bson" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/photoLinks.metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/raccomandation.bson" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/raccomandation.metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/recommendation.bson" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/recommendation.metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/recommendations.bson" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/recommendations.metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/recommendationsResults.bson" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/recommendationsResults.metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/restaurantForTest.bson" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/restaurantForTest.metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/sentiment.bson" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/sentiment.metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/tagWords.bson" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/tagWords.metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/testRecommendation.bson" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/testRecommendation.metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/testUser.bson" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/testUser.metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/usersinfo.bson" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/usersinfo.metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/yelpCategories.bson" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/dump/usersbot/yelpCategories.metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/guida mongo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/MongoDB-Backup/nomiDB.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/RistoBot (1).zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/RistoBot.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/userSurvey/userSurvey.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/userSurvey/users.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ResturantData/ResturantAPI/ResturantGoogle.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ResturantData/ResturantAPI/ResturantYelp.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/StartApplication/1_mongod.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/StartApplication/2_mongo.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/StartApplication/3_ngrok.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/StartApplication/SETTINGS.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/StartApplication/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/StartApplication/ngrok.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/StartApplication/ngrok.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/StartApplication/run.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/StartApplication/startBat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/__init__PublicIP.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/install.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ResturantData/ResturantAPI/ResturantFacebook.py" afterPath="$PROJECT_DIR$/ResturantData/ResturantAPI/ResturantFacebook.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ResturantData/test.py" afterPath="$PROJECT_DIR$/ResturantData/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/operations/sentimentAnalysis.py" afterPath="$PROJECT_DIR$/model/operations/sentimentAnalysis.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/recommendation.py" afterPath="$PROJECT_DIR$/model/recommendation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/restaurant.py" afterPath="$PROJECT_DIR$/model/restaurant.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/user.py" afterPath="$PROJECT_DIR$/model/user.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongodb/mongoDriver.py" afterPath="$PROJECT_DIR$/mongodb/mongoDriver.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notificationService/pushNotifications.py" afterPath="$PROJECT_DIR$/notificationService/pushNotifications.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/telegramBot/StartBot.py" afterPath="$PROJECT_DIR$/telegramBot/StartBot.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/telegramBot/message/message.py" afterPath="$PROJECT_DIR$/telegramBot/message/message.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webhook/templates/fineTest.html" afterPath="$PROJECT_DIR$/webhook/templates/fineTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webhook/templates/index.html" afterPath="$PROJECT_DIR$/webhook/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webhook/templates/testRecommendation3.html" afterPath="$PROJECT_DIR$/webhook/templates/testRecommendation3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webhook/templates/testRecommendation4.html" afterPath="$PROJECT_DIR$/webhook/templates/testRecommendation4.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webhook/templates/testRecommendation5.html" afterPath="$PROJECT_DIR$/webhook/templates/testRecommendation5.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webhook/webhook.py" afterPath="$PROJECT_DIR$/webhook/webhook.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/RistoBot$startApplication.coverage" NAME="startApplication Coverage Results" MODIFIED="1516231732888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RistoBot$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1520073521790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RistoBot_master$StartBot__1_.coverage" NAME="StartBot (1) Coverage Results" MODIFIED="1516228353660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/telegramBot" />
+    <SUITE FILE_PATH="coverage/RistoBot_master$startApplication.coverage" NAME="startApplication Coverage Results" MODIFIED="1516227834943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RistoBot$mongoDriver.coverage" NAME="mongoDriver Coverage Results" MODIFIED="1520792902267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mongodb" />
+    <SUITE FILE_PATH="coverage/RistoBot$testZ.coverage" NAME="testZ Coverage Results" MODIFIED="1520448182398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../MEGA/laurea mag" />
+    <SUITE FILE_PATH="coverage/RistoBot$pushNotifications.coverage" NAME="pushNotifications Coverage Results" MODIFIED="1520811954108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notificationService" />
+    <SUITE FILE_PATH="coverage/RistoBot$__init__PublicIP.coverage" NAME="__init__PublicIP Coverage Results" MODIFIED="1521665534601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RistoBot$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1516961800890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mongodb" />
+    <SUITE FILE_PATH="coverage/RistoBot$tagOperation.coverage" NAME="tagOperation Coverage Results" MODIFIED="1517919764395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model/operations" />
+    <SUITE FILE_PATH="coverage/RistoBot$StartBot.coverage" NAME="StartBot Coverage Results" MODIFIED="1521627844183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/telegramBot" />
+    <SUITE FILE_PATH="coverage/RistoBot$StartBot__1_.coverage" NAME="StartBot (1) Coverage Results" MODIFIED="1516961817749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/telegramBot" />
+    <SUITE FILE_PATH="coverage/RistoBot_master$__init__PublicIP.coverage" NAME="__init__PublicIP Coverage Results" MODIFIED="1516228012412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RistoBot$ResturantFacebook.coverage" NAME="ResturantFacebook Coverage Results" MODIFIED="1517562109935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ResturantData/ResturantAPI" />
+    <SUITE FILE_PATH="coverage/RistoBot$sentimentAnalysis.coverage" NAME="sentimentAnalysis Coverage Results" MODIFIED="1515769976170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model/operations" />
+    <SUITE FILE_PATH="coverage/RistoBot$userSurvey.coverage" NAME="userSurvey Coverage Results" MODIFIED="1516898011097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Backup/userSurvey" />
+    <SUITE FILE_PATH="coverage/RistoBot$aboutExtractor.coverage" NAME="aboutExtractor Coverage Results" MODIFIED="1517158180741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ResturantData" />
+    <SUITE FILE_PATH="coverage/RistoBot$test.coverage" NAME="test Coverage Results" MODIFIED="1518363694646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ResturantData" />
+    <SUITE FILE_PATH="coverage/RistoBot$restaurant.coverage" NAME="restaurant Coverage Results" MODIFIED="1516026824635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="message.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/telegramBot/message/message.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1029">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding>
+                <element signature="e#642#656#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mongoDriver.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mongodb/mongoDriver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11403">
+              <caret line="638" column="24" lean-forward="false" selection-start-line="638" selection-start-column="24" selection-end-line="638" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webhook.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webhook/webhook.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="12453">
+              <caret line="600" column="0" lean-forward="false" selection-start-line="600" selection-start-column="0" selection-end-line="600" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StartBot.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/telegramBot/StartBot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>updatelo</find>
+      <find>loca</find>
+      <find>raccomandazione ann</find>
+      <find>removeRecommendati</find>
+      <find>annullare la raccomandazione</find>
+      <find>tele</find>
+      <find>ana</find>
+      <find>db</find>
+      <find>resta</find>
+      <find>db.</find>
+      <find>limit</find>
+      <find>xr</find>
+      <find>recom</find>
+      <find>ke</find>
+      <find>convertca</find>
+      <find>object</find>
+      <find>upda</find>
+      <find>pearsonRest</find>
+      <find>prin</find>
+      <find>mydate</find>
+      <find>try</find>
+      <find>MongoClient</find>
+      <find>recommen</find>
+      <find>print</find>
+      <find>testRec</find>
+      <find>['data']</find>
+      <find>updat</find>
+      <find>fine</find>
+      <find>page</find>
+      <find>pearson</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>simpleRest</replace>
+      <replace>cosSimRest</replace>
+      <replace>Vote</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/model/operations/raccomandationExtractor.py" />
+        <option value="$PROJECT_DIR$/model/raccomandation.py" />
+        <option value="$PROJECT_DIR$/telegram-api-bot/StartBot.py" />
+        <option value="$PROJECT_DIR$/model/operations/userGenerator.py" />
+        <option value="$PROJECT_DIR$/ResturantData/UserData.py" />
+        <option value="$PROJECT_DIR$/webhook/templates/altro/index.html" />
+        <option value="$PROJECT_DIR$/webhook/templates/notifications.html" />
+        <option value="$PROJECT_DIR$/webhook/templates/pages/notifications.html" />
+        <option value="$PROJECT_DIR$/webhook/Nuova cartella/templates/feedback.html" />
+        <option value="$PROJECT_DIR$/startApplication.py" />
+        <option value="$PROJECT_DIR$/webhook/templates/feedback.html" />
+        <option value="$PROJECT_DIR$/webhook/templates/feedbackInfo.html" />
+        <option value="$PROJECT_DIR$/webhook/templates/recommendationInfo.html" />
+        <option value="$PROJECT_DIR$/webhook/templates/recommendations.html" />
+        <option value="$PROJECT_DIR$/webhook/templates/recommendationsInfo.html" />
+        <option value="$PROJECT_DIR$/webhook/templates/userInfo.html" />
+        <option value="$PROJECT_DIR$/webhook/templates/users.html" />
+        <option value="$PROJECT_DIR$/webhook/templates/compareRecommendations.html" />
+        <option value="$PROJECT_DIR$/webhook/templates/racCompare.html" />
+        <option value="$PROJECT_DIR$/Backup/userSurvey/userSurvey.py" />
+        <option value="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/rippletagger/models.py" />
+        <option value="$PROJECT_DIR$/ResturantData/aboutExtractor.py" />
+        <option value="$PROJECT_DIR$/__init__.py" />
+        <option value="$PROJECT_DIR$/webhook/templates/TestRecommendation.html" />
+        <option value="$PROJECT_DIR$/webhook/static/js/slider.js" />
+        <option value="$PROJECT_DIR$/webhook/static/dist/css/slider.css" />
+        <option value="$PROJECT_DIR$/webhook/static/dist/js/slider.js" />
+        <option value="$PROJECT_DIR$/model/operations/tagOperation.py" />
+        <option value="$PROJECT_DIR$/model/operations/recommendationExtractor.py" />
+        <option value="$PROJECT_DIR$/webhook/templates/testRecommendation2.html" />
+        <option value="$PROJECT_DIR$/webhook/templates/testRecommendation1.html" />
+        <option value="$PROJECT_DIR$/webhook/templates/morris.html" />
+        <option value="$PROJECT_DIR$/model/restaurant.py" />
+        <option value="$PROJECT_DIR$/model/user.py" />
+        <option value="$PROJECT_DIR$/ResturantData/test.py" />
+        <option value="$PROJECT_DIR$/model/recommendation.py" />
+        <option value="$PROJECT_DIR$/webhook/templates/testRecommendation3.html" />
+        <option value="$PROJECT_DIR$/webhook/templates/testRecommendation4.html" />
+        <option value="$PROJECT_DIR$/webhook/templates/fineTest.html" />
+        <option value="$PROJECT_DIR$/webhook/templates/testRecommendation.html" />
+        <option value="$PROJECT_DIR$/webhook/templates/testRecommendation5.html" />
+        <option value="$PROJECT_DIR$/webhook/templates/testRecommendation6.html" />
+        <option value="$PROJECT_DIR$/notificationService/pushNotifications.py" />
+        <option value="$PROJECT_DIR$/model/operations/sentimentAnalysis.py" />
+        <option value="$PROJECT_DIR$/webhook/templates/index.html" />
+        <option value="$PROJECT_DIR$/mongodb/mongoDriver.py" />
+        <option value="$PROJECT_DIR$/ResturantData/ResturantAPI/ResturantFacebook.py" />
+        <option value="$PROJECT_DIR$/telegramBot/StartBot.py" />
+        <option value="$PROJECT_DIR$/Config/config.py" />
+        <option value="$PROJECT_DIR$/telegramBot/message/message.py" />
+        <option value="$PROJECT_DIR$/webhook/webhook.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="952" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="RistoBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RistoBot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RistoBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RistoBot" type="462c0819:PsiDirectoryNode" />
+              <item name="mongodb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RistoBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RistoBot" type="462c0819:PsiDirectoryNode" />
+              <item name="notificationService" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RistoBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RistoBot" type="462c0819:PsiDirectoryNode" />
+              <item name="ResturantData" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RistoBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RistoBot" type="462c0819:PsiDirectoryNode" />
+              <item name="telegramBot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RistoBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RistoBot" type="462c0819:PsiDirectoryNode" />
+              <item name="telegramBot" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RistoBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RistoBot" type="462c0819:PsiDirectoryNode" />
+              <item name="webhook" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RistoBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RistoBot" type="462c0819:PsiDirectoryNode" />
+              <item name="webhook" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nicola\Documents\MEGA\laurea mag\RistoBot\webhook\templates" />
+      <recent name="C:\Users\Nicola\Documents\GitHub\RistoBot\webhook\templates" />
+      <recent name="C:\Users\Nicola\Documents\GitHub\RistoBot" />
+      <recent name="C:\Users\Nicola\Documents\GitHub\RistoBot\telegramBot" />
+      <recent name="C:\Users\Nicola\Documents\GitHub\RistoBot\mongodb" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nicola\Documents\MEGA\laurea mag\RistoBot\mongodb" />
+      <recent name="C:\Users\Nicola\Documents\GitHub\RistoBot\webhook\templates" />
+      <recent name="C:\Users\Nicola\Documents\GitHub\RistoBot\webhook\static\dist\js" />
+      <recent name="C:\Users\Nicola\Documents\GitHub\RistoBot\model\operations" />
+      <recent name="C:\Users\Nicola\Documents\GitHub\RistoBot\webhook\templates\pages" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.__init__PublicIP">
+    <configuration name="RistoBot" type="PythonConfigurationType" factoryName="Python" singleton="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="RistoBot" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="StartBot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/telegramBot" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="RistoBot" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/telegramBot/StartBot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="__init__PublicIP" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="RistoBot" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/__init__PublicIP.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="mongoDriver" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mongodb" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="RistoBot" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mongodb/mongoDriver.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="pushNotifications" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/notificationService" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="RistoBot" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/notificationService/pushNotifications.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="testZ" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../MEGA/laurea mag" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="RistoBot" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../MEGA/laurea mag/testZ.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Python.RistoBot" />
+      <item index="1" class="java.lang.String" itemvalue="Python.__init__PublicIP" />
+      <item index="2" class="java.lang.String" itemvalue="Python.mongoDriver" />
+      <item index="3" class="java.lang.String" itemvalue="Python.StartBot" />
+      <item index="4" class="java.lang.String" itemvalue="Python.pushNotifications" />
+      <item index="5" class="java.lang.String" itemvalue="Python.testZ" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.__init__PublicIP" />
+        <item index="1" class="java.lang.String" itemvalue="Python.StartBot" />
+        <item index="2" class="java.lang.String" itemvalue="Python.pushNotifications" />
+        <item index="3" class="java.lang.String" itemvalue="Python.mongoDriver" />
+        <item index="4" class="java.lang.String" itemvalue="Python.testZ" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="98b7038e-2d9c-4c10-9ced-8654b65016d5" name="Default" comment="" />
+      <created>1510074928422</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1510074928422</updated>
+      <workItem from="1515615980163" duration="774000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="774000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19739583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3112583" sideWeight="0.5078125" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30022076" sideWeight="0.4921875" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39955848" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50993377" sideWeight="0.49761903" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="8" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/webhook/templates/recommendations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="94" column="72" lean-forward="false" selection-start-line="94" selection-start-column="72" selection-end-line="94" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhook/templates/recommendationsInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="94" column="75" lean-forward="false" selection-start-line="94" selection-start-column="75" selection-end-line="94" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhook/templates/users.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="94" column="72" lean-forward="false" selection-start-line="94" selection-start-column="72" selection-end-line="94" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhook/templates/compareRecommendations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2793">
+          <caret line="133" column="60" lean-forward="false" selection-start-line="133" selection-start-column="60" selection-end-line="133" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhook/templates/racCompare.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="110" column="77" lean-forward="false" selection-start-line="110" selection-start-column="77" selection-end-line="110" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backup/userSurvey/users.csv" />
+    <entry file="file://$PROJECT_DIR$/Backup/userSurvey/userSurvey.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/rippletagger/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pymongo/collection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11046">
+          <caret line="556" column="0" lean-forward="false" selection-start-line="556" selection-start-column="0" selection-end-line="556" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhook/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhook/templates/userInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2436">
+          <caret line="116" column="23" lean-forward="false" selection-start-line="116" selection-start-column="23" selection-end-line="117" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/requests/sessions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12369">
+          <caret line="617" column="0" lean-forward="false" selection-start-line="617" selection-start-column="0" selection-end-line="617" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhook/static/dist/js/sb-admin-2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhook/static/dist/js/slider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhook/static/dist/css/slider.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1113">
+          <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhook/static/dist/js/jquery.rateyo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4284">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scipy/stats/stats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61215">
+          <caret line="2932" column="4" lean-forward="false" selection-start-line="2932" selection-start-column="4" selection-end-line="2932" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhook/templates/testRecommendation2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2205">
+          <caret line="105" column="59" lean-forward="false" selection-start-line="105" selection-start-column="59" selection-end-line="105" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhook/templates/testRecommendation1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongodb/coordinates.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ResturantData/ResturantAPI/testo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6515">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/operations/userGenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/restaurant.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1323">
+          <caret line="63" column="73" lean-forward="true" selection-start-line="63" selection-start-column="73" selection-end-line="63" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RistoBot/ResturantData/ResturantAPI/ResturantFacebook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="53" column="22" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhook/templates/testRecommendation3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3360">
+          <caret line="160" column="0" lean-forward="false" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhook/templates/testRecommendation4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6027">
+          <caret line="287" column="36" lean-forward="false" selection-start-line="287" selection-start-column="36" selection-end-line="287" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhook/templates/fineTest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhook/templates/testRecommendation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhook/templates/testRecommendation5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="121" column="83" lean-forward="false" selection-start-line="121" selection-start-column="83" selection-end-line="121" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhook/templates/testRecommendation6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="108" column="28" lean-forward="false" selection-start-line="108" selection-start-column="28" selection-end-line="108" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhook/static/vendor/flot/jquery.flot.pie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1512">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhook/templates/morris.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8106">
+          <caret line="386" column="30" lean-forward="false" selection-start-line="383" selection-start-column="20" selection-end-line="386" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ResturantData/aboutExtractor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2625">
+          <caret line="130" column="18" lean-forward="false" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notificationService/pushNotifications.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="40" column="9" lean-forward="false" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/recommendation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3086">
+          <caret line="195" column="0" lean-forward="false" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ResturantData/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/operations/weatherExtractor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../MEGA/laurea mag/testZ.py" />
+    <entry file="file://$PROJECT_DIR$/model/operations/recommendationExtractor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6447">
+          <caret line="307" column="0" lean-forward="false" selection-start-line="307" selection-start-column="0" selection-end-line="307" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ResturantData/ResturantAPI/ResturantFacebook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhook/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2541">
+          <caret line="246" column="61" lean-forward="false" selection-start-line="246" selection-start-column="61" selection-end-line="246" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/operations/sentimentAnalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="60" column="15" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/operations/tagOperation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/telegramBot/StartBot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/telegramBot/message/message.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1029">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="e#642#656#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__PublicIP.py" />
+    <entry file="file://$PROJECT_DIR$/webhook/webhook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12453">
+          <caret line="600" column="0" lean-forward="false" selection-start-line="600" selection-start-column="0" selection-end-line="600" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongodb/mongoDriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11403">
+          <caret line="638" column="24" lean-forward="false" selection-start-line="638" selection-start-column="24" selection-end-line="638" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../static/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../static/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../static/dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../static/vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">RistoBot</a>
+        </div>
+        <!-- /.navbar-header -->
+
+        <ul class="nav navbar-top-links navbar-right">
+
+
+        </ul>
+        <!-- /.navbar-top-links -->
+
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                        <a class="nav-link" href="/">
+                            <i class="fa fa-fw fa-dashboard"></i>
+                            <span class="nav-link-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Utenti">
+                        <a class="nav-link" href="users.html">
+                            <i class="fa fa-fw fa-user"></i>
+                            <span class="nav-link-text">Utenti</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Raccomandazioni">
+                        <a class="nav-link" href="recommendations.html">
+                            <i class="fa fa-fw fa-paper-plane"></i>
+                            <span class="nav-link-text">Raccomandazioni</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="FeedBack">
+                        <a class="nav-link" href="feedback.html">
+                            <i class="fa fa-fw fa-comments-o"></i>
+                            <span class="nav-link-text">FeedBack</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="FeedBack">
+                        <a class="nav-link" href="compareRecommendations.html">
+                            <i class="fa fa-fw fa-bar-chart"></i>
+                            <span class="nav-link-text">Analisi/Comparazione Raccomandazioni</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="FeedBack">
+                        <a class="nav-link" href="testRecommendation.html">
+                            <i class="fa fa-fw fa-bar-chart"></i>
+                            <span class="nav-link-text">Test raccomandazioni</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.sidebar-collapse -->
+        </div>
+        <!-- /.navbar-static-side -->
+    </nav>
+
+    <div id="page-wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Valutazione Raccomandazioni</h1>
+                <h4>Sono stati intervistati {{ usersTest| length }} utenti</h4>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <div class="row">
+            <div class="col-lg-1">
+            </div>
+            <div class="col-lg-10">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Fasce di età
+                    </div>
+                    <div class="actual-chart" id="barAgeChart" style="height: 250px;"></div>
+
+                    <div class="chart-container">
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-1">
+            </div>
+            <div class="col-lg-10">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Genere
+                    </div>
+                    <div id="donoutGenderChart" style="height: 250px;"></div>
+
+                    <div class="chart-container">
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-1">
+            </div>
+            <div class="col-lg-10">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Veicoli
+                    </div>
+                    <div id="donoutVehicleChart" style="height: 250px;"></div>
+
+                    <div class="chart-container">
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-1">
+            </div>
+            <div class="col-lg-10">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Lavoro
+                    </div>
+                    <div id="donoutJobChart" style="height: 250px;"></div>
+
+                    <div class="chart-container">
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-1">
+            </div>
+            <div class="col-lg-10">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Titolo di studio
+                    </div>
+                    <div id="donoutQualificationChart" style="height: 250px;"></div>
+
+                    <div class="chart-container">
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3">
+            </div>
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Raccomandazione preferita
+                    </div>
+                    <div class="actual-chart" id="barRecChart" style="height: 250px;"></div>
+
+                    <div class="chart-container">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-1">
+            </div>
+            <div class="col-lg-10">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Media Precision e Recall Algoritmi                    </div>
+                    <div class="actual-chart" id="barAlgChart" style="height: 250px;"></div>
+
+                    <div class="chart-container">
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1">
+            </div>
+            <div class="col-lg-10">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Media F-Measure Algoritmi                    </div>
+                    <div class="actual-chart" id="barFMeasure" style="height: 250px;"></div>
+
+                    <div class="chart-container">
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../static/vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../static/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="../static/vendor/metisMenu/metisMenu.min.js"></script>
+
+<!-- Morris Charts JavaScript -->
+
+<script src="../static/vendor/raphael/raphael.min.js"></script>
+<script src="../static/vendor/morrisjs/morris.min.js"></script>
+<script src="../static/data/morris-data.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="../static/dist/js/sb-admin-2.js"></script>
+
+<!-- Flot Charts JavaScript -->
+<script src="../static/vendor/flot/jquery.flot.js"></script>
+<script src="../static/vendor/flot/jquery.flot.pie.js"></script>
+
+
+<script>
+    new Morris.Bar({
+        // ID of the element in which to draw the chart.
+        element: 'barAgeChart',
+        // Chart data records -- each entry in this array corresponds to a point on
+        // the chart.
+
+
+        data: [
+            {% for a in age %}
+                { age: "{{a[0]}}", count: {{ a[1] }} },
+            {% endfor %}
+
+
+        ],
+        // The name of the data record attribute that contains x-values.
+        xkey: 'age',
+        // A list of names of data record attributes that contain y-values.
+        ykeys: ['count'],
+        hideHover:true,
+        // Labels for the ykeys -- will be displayed when you hover over the
+        // chart.
+        labels: ['Numero di utenti'],
+        barColors: function (row, series, type) {
+            if (type === 'bar') {
+                hue=0.57;
+
+                var blue = ["#003d99","#0047b3","#0052cc",
+                    "#005ce6","#0066ff","#1a75ff","#4d94ff"];//Math.ceil(70 * row.y / this.ymax);
+
+
+                return blue[row.x];
+            }
+            else {
+                return '#002966';
+            }
+        },
+        yLabelFormat: function(y){return y != Math.round(y)?'':y;}
+    });
+</script>
+
+<script>
+    new Morris.Bar({
+        // ID of the element in which to draw the chart.
+        element: 'barRecChart',
+        // Chart data records -- each entry in this array corresponds to a point on
+        // the chart.
+
+
+        data: [
+
+            { age: "Pearson", count:" {{ results[1][0] }} "},
+            { age: "CosSim", count: '{{ results[1][1] }}' },
+            { age: "Indifferente", count: '{{ results[1][2] }}' }
+
+
+
+        ],
+        // The name of the data record attribute that contains x-values.
+        xkey: 'age',
+        // A list of names of data record attributes that contain y-values.
+        ykeys: ['count'],
+        hideHover:'Auto',
+        // Labels for the ykeys -- will be displayed when you hover over the
+        // chart.
+        labels: ['Utenti'],
+        barColors: function (row, series, type) {
+            if (type === 'bar') {
+                hue=0.57;
+
+                var blue = ["#003d99","#0047b3","#0052cc",
+                    "#005ce6","#0066ff","#1a75ff","#4d94ff"];//Math.ceil(70 * row.y / this.ymax);
+
+
+                return blue[row.x];
+            }
+            else {
+                return '#002966';
+            }
+        },
+        yLabelFormat: function(y){return y != Math.round(y)?'':y;}
+    });
+</script>
+
+<script>
+    new Morris.Bar({
+        // ID of the element in which to draw the chart.
+        element: 'barAlgChart',
+        // Chart data records -- each entry in this array corresponds to a point on
+        // the chart.
+
+
+        data: [
+
+            { alg: "Pearson", precision:"{{ results[2][0] }}",recall:"{{ results[2][1] }}"},
+            { alg: "CosSim", precision:"{{ results[3][0] }}",recall:"{{ results[3][1] }}" },
+            { alg: "Distanza", precision:"{{ results[4][0] }}",recall:"{{ results[4][1] }}" },
+            { alg: "Valutazione", precision:"{{ results[5][0] }}",recall:"{{ results[5][1] }}" },
+
+
+
+        ],
+        // The name of the data record attribute that contains x-values.
+        xkey: 'alg',
+        // A list of names of data record attributes that contain y-values.
+        ykeys: ['precision','recall'],
+        // Labels for the ykeys -- will be displayed when you hover over the
+        // chart.
+        labels: ['Precision','Recall'],
+        hideHover:'Auto'
+
+    });
+</script>
+
+<script>
+    new Morris.Bar({
+        // ID of the element in which to draw the chart.
+        element: 'barFMeasure',
+        // Chart data records -- each entry in this array corresponds to a point on
+        // the chart.
+
+
+        data: [
+
+            { alg: "Pearson", FMeasure:"{{ fmeasure[0] }}"},
+            { alg: "CosSim", FMeasure:"{{ fmeasure[1] }}"},
+            { alg: "Distanza", FMeasure:"{{ fmeasure[2] }}"},
+            { alg: "Valutazione", FMeasure:"{{ fmeasure[3] }}"},
+
+
+
+        ],
+        // The name of the data record attribute that contains x-values.
+        xkey: 'alg',
+        // A list of names of data record attributes that contain y-values.
+        ykeys: ['FMeasure'],
+        // Labels for the ykeys -- will be displayed when you hover over the
+        // chart.
+        labels: ['F Measure'],
+        hideHover:'Auto'
+
+    });
+</script>
+
+<script>
+    var data=[
+        {% for g in gender %}
+            {label: "{{g[0]}}", data: {{ g[1] }}},
+
+        {% endfor %}
+
+    ];
+    new $.plot('#donoutGenderChart', data, {
+        series: {
+            pie: {
+                show: true,
+                label: {
+                    show: true,
+                    radius: 0.8,
+                    formatter: function (label, series) {
+                        return '<div style="border:1px solid grey;font-size:8pt;text-align:center;padding:5px;color:white;">' +
+                            label + ' : ' +
+                            Math.round(series.percent) +
+                            '%</div>';
+                    },
+                    background: {
+                        opacity: 0.8,
+                        color: '#000'
+                    }
+                }
+            }
+        }
+
+    });
+
+</script>
+
+<script>
+    var data=[
+        {% for v in vehicle %}
+            {label: "{{v[0]}}", data: {{ v[1] }}},
+
+        {% endfor %}
+
+    ];
+    new $.plot('#donoutVehicleChart', data, {
+        series: {
+            pie: {
+                show: true,
+                label: {
+                    show: true,
+                    radius: 0.8,
+                    formatter: function (label, series) {
+                        return '<div style="border:1px solid grey;font-size:8pt;text-align:center;padding:5px;color:white;">' +
+                            label + ' : ' +
+                            Math.round(series.percent) +
+                            '%</div>';
+                    },
+                    background: {
+                        opacity: 0.8,
+                        color: '#000'
+                    }
+                }
+            }
+        }
+
+    });
+
+</script>
+<script>
+
+    var data=[
+        {% for j in job %}
+            {label: "{{j[0]}}", data: {{ j[1] }}},
+
+        {% endfor %}
+
+    ];
+    new $.plot('#donoutJobChart', data, {
+        series: {
+            pie: {
+                show: true,
+                label: {
+                    show: true,
+                    radius: 0.8,
+                    formatter: function (label, series) {
+                        return '<div style="border:1px solid grey;font-size:8pt;text-align:center;padding:5px;color:white;">' +
+                            label + ' : ' +
+                            Math.round(series.percent) +
+                            '%</div>';
+                    },
+                    background: {
+                        opacity: 0.8,
+                        color: '#000'
+                    }
+                }
+            }
+        }
+
+    });
+
+</script>
+<script>
+    var data=[
+        {% for q in qualification %}
+            {label: "{{q[0]}}", data: {{ q[1] }}},
+
+        {% endfor %}
+    ];
+    new $.plot('#donoutQualificationChart', data, {
+        series: {
+            pie: {
+                show: true,
+                label: {
+                    show: true,
+                    radius: 0.8,
+                    formatter: function (label, series) {
+                        return '<div style="border:1px solid grey;font-size:8pt;text-align:center;padding:5px;color:white;">' +
+                            label + ' : ' +
+                            Math.round(series.percent) +
+                            '%</div>';
+                    },
+                    background: {
+                        opacity: 0.8,
+                        color: '#000'
+                    }
+                }
+            }
+        }
+
+    });
+
+
+</script>
+
+
+</body>
+
+</html>

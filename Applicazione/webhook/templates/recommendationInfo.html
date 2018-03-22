@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../static/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../static/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../static/dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../static/vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">RistoBot</a>
+        </div>
+        <!-- /.navbar-header -->
+
+        <ul class="nav navbar-top-links navbar-right">
+
+
+        </ul>
+        <!-- /.navbar-top-links -->
+
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                        <a class="nav-link" href="../">
+                            <i class="fa fa-fw fa-dashboard"></i>
+                            <span class="nav-link-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Utenti">
+                        <a class="nav-link" href="../users.html">
+                            <i class="fa fa-fw fa-user"></i>
+                            <span class="nav-link-text">Utenti</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Raccomandazioni">
+                        <a class="nav-link" href="../recommendations.html">
+                            <i class="fa fa-fw fa-paper-plane"></i>
+                            <span class="nav-link-text">Raccomandazioni</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="FeedBack">
+                        <a class="nav-link" href="../feedback.html">
+                            <i class="fa fa-fw fa-comments-o"></i>
+                            <span class="nav-link-text">FeedBack</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="FeedBack">
+                        <a class="nav-link" href="../compareRecommendations.html">
+                            <i class="fa fa-fw fa-bar-chart"></i>
+                            <span class="nav-link-text">Analisi/Comparazione Raccomandazioni</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.sidebar-collapse -->
+        </div>
+        <!-- /.navbar-static-side -->
+    </nav>
+
+    <div id="page-wrapper">
+        <br><br>
+        <div class="container-fluid well span6">
+            <div class="row-fluid">
+
+                <div class="col-xl-3 col-sm-6 mb-3">
+                    <h5>ChatId: <b>{{ data.chatid }}</b></h5>
+                    <h5>Data: <b>{{ data.date }}</b></h5>
+                    {% if  data.time_pasto|length >0 %}
+                        <h5>Orario pasto: <b>{{ data.time_pasto }}</b></h5>
+                    {% endif %}
+                    {% if  data.cucina|length >0 %}
+                        <h5>Cucina: <b>{{ data.cucina }}</b></h5>
+                    {% endif %}
+                    <h5>Location:
+                        <ul>
+                            <b>
+                                <li>Latitudine: {{ data.location.latitude }}</li>
+                                <li>Longitudine: {{ data.location.longitude }}</li>
+                            </b>
+                        </ul>
+                    </h5>
+                    <h5>Meteo: <b>{{ data.weather }}</b></h5>
+                    <h5>Raggio di ricerca: <b>{{ (data.raggio| int)/1000 }}km</b></h5>
+                    <h5>Tipologie di cucina raccomandate:</h5>
+                    <ul>
+                        {% for t in data.typeRecommendation %}
+                            <li> <b>{{ t[0] }}</b></li>
+                        {% endfor %}
+                    </ul>
+                    <!-- <h4></h4><a href="../findUserRecommendations/{{ data.chatid }}">Mostra le raccomandazioni</a></h>
+                    <h4></h4><a href="../findUserFeedBack/{{ data.chatid }}">Mostra i FeedBack</a></h> -->
+                </div>
+                <div class="col-xl-3 col-sm-6 mb-3">
+                    <h5>Ristorante scelto: <b>{{ data.restaurant.name }}</b></h5>
+                    <h5>FeedBack:<br>
+                        {% if data.feedback | length >0 %}
+                            <b>{{ data.feedback[0] }}</b></h5>
+                            <h5>Voto: <b>{{ data.feedback[2]}}</b></h5>
+                            <h5>Sentiment:
+                                {% if data.feedback[3] >0%}
+                                    <b style="color: green;"> Positivo </b>
+                                {% elif data.feedback[3] <0 %}
+                                    <b style="color: red;"> Negativo </b>
+                                {% else %}
+                                    <b>Neutro</b>
+
+                                {% endif %}
+                            </h5>
+                        {% else %}
+                            <b>FeedBack non ancora inserito</b></h5>
+                        {% endif %}
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../static/vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../static/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="../static/vendor/metisMenu/metisMenu.min.js"></script>
+
+<!-- Morris Charts JavaScript -->
+<script src="../static/vendor/raphael/raphael.min.js"></script>
+<script src="../static/vendor/morrisjs/morris.min.js"></script>
+<script src="../static/data/morris-data.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="../static/dist/js/sb-admin-2.js"></script>
+
+
+
+</body>
+
+</html>

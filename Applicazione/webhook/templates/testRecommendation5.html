@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <link href="../static/dist/css/slider.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="../static/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../static/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../static/dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../static/vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../static/dist/css/jquery.rateyo.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">RistoBot</a>
+        </div>
+        <!-- /.navbar-header -->
+
+        <ul class="nav navbar-top-links navbar-right">
+
+
+        </ul>
+        <!-- /.navbar-top-links -->
+
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                        <a class="nav-link" href="/">
+                            <i class="fa fa-fw fa-dashboard"></i>
+                            <span class="nav-link-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Utenti">
+                        <a class="nav-link" href="users.html">
+                            <i class="fa fa-fw fa-user"></i>
+                            <span class="nav-link-text">Utenti</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Raccomandazioni">
+                        <a class="nav-link" href="recommendations.html">
+                            <i class="fa fa-fw fa-paper-plane"></i>
+                            <span class="nav-link-text">Raccomandazioni</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="FeedBack">
+                        <a class="nav-link" href="feedback.html">
+                            <i class="fa fa-fw fa-comments-o"></i>
+                            <span class="nav-link-text">FeedBack</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="FeedBack">
+                        <a class="nav-link" href="compareRecommendations.html">
+                            <i class="fa fa-fw fa-bar-chart"></i>
+                            <span class="nav-link-text">Analisi/Comparazione Raccomandazioni</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.sidebar-collapse -->
+        </div>
+        <!-- /.navbar-static-side -->
+    </nav>
+
+    <div id="page-wrapper">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Test Recommendation</h1>
+                <h4>Pagina 5</h4>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Valutazioni ristoranti
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <form role="form" action="/testRecommendation6.html" method="post">
+                                    <div class="form-group">
+                                        <label>Valuta questi 10 ristoranti, a seconda della probabilità che ha ogniuno di essere scelto da te a seconda dei tuoi gusti culinari</label>
+                                        <div class="table-responsive">
+
+                                            <table class="table">
+
+                                                <tbody>
+                                                {% for r in simpleRest %}
+                                                    <tr>
+                                                        <th>Nome</th>
+                                                        <th>Tipologie di cucina</th>
+                                                        <th>Prezzo</th>
+                                                        <th>Valutazione</th>
+                                                        <th>Distanza</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{{ r['name'] }}</td>
+                                                        <td>
+                                                            {% for type in r['category_list'] %}
+                                                                {{ type['sub_category'] | replace("_"," ") }}{{ ", " if not loop.last }}
+                                                            {% endfor %}
+                                                        </td>
+                                                        <td>{{ r['price_range'] }}</td>
+                                                        <td>{{ r['overall_star_rating'] }}</td>
+                                                        <td>{{ '%0.3f'  | format(r['distance']|float)}} km</td>
+
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            <button type="button"  onclick="show({{ r['id']  }});" id="Button{{ r['id']  }}" >Visualizza info ristorante</button>
+
+                                                            <div class="carousel slide media-carousel" id="{{ r['id']  }}" style = "width:100%;display: none" data-interval="false" >
+                                                                <div class="carousel-inner" >
+                                                                    <div class="item  active"  >
+                                                                        <div class="row" >
+
+                                                                            <div class="col-md-4" style = "width:100%">
+                                                                                <a class="thumbnail" href="#"><img alt="" src="{{  r['photo'][0] }}"></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    {% for photo in r['photo'][1:]  %}
+                                                                        <div class="item"  >
+                                                                            <div class="row" >
+
+                                                                                <div class="col-md-4" style = "width:100%">
+                                                                                    <a class="thumbnail" href="#"><img alt="" src="{{photo}}"></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    {% endfor %}
+
+                                                                </div>
+                                                                <a data-slide="prev" href="#{{ r['id']  }}" class="left carousel-control">‹</a>
+                                                                <a data-slide="next" href="#{{ r['id']  }}" class="right carousel-control">›</a>
+                                                            </div>
+                                                            <br>
+
+
+                                                        </td>
+
+                                                        <td><div id="About{{ r['id']  }}"  style="display: none"><b>Descrizione:</b><br>{{ r['about']  }}</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-group">
+                                                                <label>Con quale probabilità sceglieresti questo ristorante?</label><br>
+
+                                                                <div id="rateYo{{ r['id']  }}"  ></div>
+                                                                <div class="counter" ></div>
+                                                                <input class="form-control" id="value{{ r['id']  }}" name="{{ r['id'] }}" value="1" style="display: none">
+
+
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                {% endfor %}
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+
+
+                                    <button type="submit" class="btn btn-default" name="user" value="{{ user }}">Continua</button>
+                                </form>
+                            </div>
+                            <!-- /.col-lg-6 (nested) -->
+
+                        </div>
+                        <!-- /.row (nested) -->
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../static/vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../static/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="../static/vendor/metisMenu/metisMenu.min.js"></script>
+
+<!-- Morris Charts JavaScript -->
+<script src="../static/vendor/raphael/raphael.min.js"></script>
+<script src="../static/vendor/morrisjs/morris.min.js"></script>
+<script src="../static/data/morris-data.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="../static/dist/js/sb-admin-2.js"></script>
+<script src="../static/dist/js/slider.js"></script>
+<script src="../static/dist/js/jquery.rateyo.js"></script>
+
+<script>
+    function show(elementId) {
+        console.log(document.getElementById(elementId).style.display==="none");
+
+
+        if (document.getElementById(elementId).style.display==="none"){
+            document.getElementById('Button'+elementId).innerHTML="Nascondi informazioni";
+            document.getElementById('About'+elementId).style.display="block";
+
+            document.getElementById(elementId).style.display="block";
+        } else{
+            console.log("prova");
+            document.getElementById('Button'+elementId).innerHTML="Visualizza info ristorante";
+            document.getElementById('About'+elementId).style.display="none";
+
+            document.getElementById(elementId).style.display="none";
+        }
+        {% for r in simpleRest %}
+            var id = {{ r['id']  }};
+            if (id!== elementId ){
+                document.getElementById({{ r['id']  }}).style.display = "none";
+                document.getElementById('About' +{{ r['id']  }}).style.display = "none";
+                document.getElementById('Button' +{{ r['id']  }}).innerHTML = "Visualizza info ristorante";
+            }
+        {% endfor %}
+    }
+
+</script>
+
+<script>
+    /* Javascript */
+
+    $(function () {
+        {% for r in simpleRest %}
+            $("#rateYo"+{{ r['id'] }}).rateYo({
+                precision: 2,
+                fullStar: true,
+            }).on("rateyo.change", function (e, data) {
+
+                var rating = data.rating;
+                var t = "";
+                if (rating==0)
+                    t="";
+                if (rating==0)
+                    t="";
+                if (rating==1)
+                    t="Nessuna probabilità"
+                if(rating==2)
+                    t="Pochissime probabilità";
+                if(rating==3)
+                    t="Potrei andarci ogni tanto";
+                if(rating==4)
+                    t="Potrei andarci spesso";
+                if(rating==5)
+                    t="Potrebbe essere la mia prima scelta";
+
+
+                $(this).next().text(t);
+
+            }).on("rateyo.set", function (e, data) {
+
+                var rating = data.rating;
+                var idInput=this.id.replace("rateYo","value");
+
+                document.getElementById(idInput).value = rating;
+
+            });
+        {% endfor %}
+    });
+
+
+</script>
+
+</body>
+
+</html>
